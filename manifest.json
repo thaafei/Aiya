@@ -1,0 +1,21 @@
+{
+  "manifest_version": 1,
+  "name": "Aiya - AI Overview Remover",
+  "version": "1.0",
+  "description": "Add the Aiya blocker to remove the AI overview on each page",
+  "icons": {
+    "16": "images/plant.png",
+    "32": "images/plant.png",
+    "48": "images/plant.png",
+    "128": "images/plant.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}
