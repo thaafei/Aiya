@@ -11,8 +11,10 @@ function renderRemoveContent(yuckyAI) {
 }
 
 function removeListItem() {
-  ai_mode_tab = document.querySelector('[data-hveid="CAcQAg"]')
-  ai_mode_tab.remove()
+  ai_mode_tab = document.querySelector('[jsname="xBNgKe"]');
+  if (ai_mode_tab){
+    ai_mode_tab.remove()
+  }
 }
 renderRemoveContent(document.querySelector('[data-mcp], [data-mcpr]'));
 removeListItem();
