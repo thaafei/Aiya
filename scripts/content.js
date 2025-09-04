@@ -10,4 +10,9 @@ function renderRemoveContent(yuckyAI) {
   parent.replaceChildren(sparrow)
 }
 
+function removeListItem() {
+  ai_mode_tab = document.querySelector('[data-hveid="CAcQAg"]')
+  ai_mode_tab.remove()
+}
 renderRemoveContent(document.querySelector('[data-mcp], [data-mcpr]'));
+removeListItem();
